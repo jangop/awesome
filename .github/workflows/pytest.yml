@@ -1,8 +1,9 @@
 name: Pytest
 
+on: [push]
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
