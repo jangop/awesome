@@ -22,7 +22,7 @@ class AwesomeClassifier(sklearn.base.BaseEstimator, sklearn.base.ClassifierMixin
         self.classes_ = sklearn.utils.multiclass.unique_labels(y)
 
         # Store the chosen label for our pseudo-classifier
-        self.chosen_label_ = self.y_[self.i]
+        self.chosen_label_ = self.y_[-self.i]
 
         # Return the classifier, as expected by sklearn
         return self
